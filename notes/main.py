@@ -21,11 +21,6 @@ from sqlmodel import Field, Session, SQLModel, create_engine
 from uvicorn.middleware.proxy_headers import ProxyHeadersMiddleware
 
 
-
-
-
-
-
 # -- CONFIG --
 
 
