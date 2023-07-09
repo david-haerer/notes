@@ -1,0 +1,3 @@
+<main id="notes" hx-confirm="Are you sure?" hx-target="closest .delete">
+  {% for note in notes %} {% include "partials/note.html" %} {% endfor %}
+</main>

@@ -1,0 +1,16 @@
+<div class="note">
+  <div class="meta">
+    <small class="info">
+      David Härer ∙ {{ note.timestamp | render_timestamp }}
+    </small>
+    <button class="edit" hx-get="/edit/{{ note.timestamp }}">✎</button>
+    <button
+      class="delete"
+      hx-delete="/delete/{{ note.timestamp }}"
+      hx-target="#notes"
+    >
+      ⨯
+    </button>
+  </div>
+  <p class="content">{{ note.content }}</p>
+</div>
