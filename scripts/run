@@ -1,0 +1,4 @@
+#!/bin/sh
+
+docker rm -f notes
+docker run -d --name notes -v ./data:/data -p 127.0.0.1:8000:80 notes
