@@ -37,27 +37,56 @@ header {
   margin: 0;
   display: grid;
   grid-template-columns: 1fr auto;
+  padding: var(--size-2) var(--size-1);
+  padding-bottom: 0;
 }
 
 header h1 {
   margin: 0;
   font-family: var(--font-sans);
-  font-size: var(--font-size-4);
-  padding-top: var(--size-2);
-  margin: var(--size-2) var(--size-1);
+  font-size: var(--font-size-3);
   font-weight: var(--font-weight-3);
+  line-height: var(--font-lineheight-3);
 }
 
 header .login {
+  line-height: var(--font-lineheight-3);
+  padding-top: var(--size-1);
   font-family: var(--font-sans);
-  font-size: var(--font-size-2);
-  padding-top: var(--size-2);
-  margin: var(--size-2) var(--size-1);
+  font-size: var(--font-size-3);
   font-weight: var(--font-weight-3);
   color: var(--stone-4);
   text-decoration: none;
-  margin: auto 0;
+  
+  font-family: var(--font-sans);
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-3);
+  line-height: var(--font-lineheight-3);
 }
+
+header .login:hover {
+  text-decoration: underline;
+}
+
+header .name {
+  line-height: var(--font-lineheight-3);
+  padding-top: var(--size-1);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-3);
+  color: var(--stone-4);
+  text-decoration: none;
+  
+  font-family: var(--font-sans);
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-3);
+  line-height: var(--font-lineheight-3);
+}
+
+header .name:hover {
+  text-decoration: underline;
+}
+
 
 /* -- FOOTER -- */
 
