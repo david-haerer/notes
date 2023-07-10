@@ -1,3 +1,0 @@
-#!/bin/sh
-
-sqlite3 "$DATA_PATH/notes.db" ".backup '$DATA_PATH/$(date -u --iso-8601=seconds)_notes.db'"
