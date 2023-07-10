@@ -49,44 +49,23 @@ header h1 {
   line-height: var(--font-lineheight-3);
 }
 
-header .login {
+header .auth {
   line-height: var(--font-lineheight-3);
   padding-top: var(--size-1);
-  font-family: var(--font-sans);
-  font-size: var(--font-size-3);
-  font-weight: var(--font-weight-3);
-  color: var(--stone-4);
+  color: var(--stone-6);
   text-decoration: none;
   
-  font-family: var(--font-sans);
-  font-size: var(--font-size-2);
-  font-weight: var(--font-weight-3);
-  line-height: var(--font-lineheight-3);
-}
-
-header .login:hover {
-  text-decoration: underline;
-}
-
-header .name {
-  line-height: var(--font-lineheight-3);
-  padding-top: var(--size-1);
   font-family: var(--font-sans);
   font-size: var(--font-size-1);
   font-weight: var(--font-weight-3);
-  color: var(--stone-4);
-  text-decoration: none;
-  
-  font-family: var(--font-sans);
-  font-size: var(--font-size-2);
-  font-weight: var(--font-weight-3);
-  line-height: var(--font-lineheight-3);
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: 0;
 }
 
-header .name:hover {
+header .auth:hover {
   text-decoration: underline;
 }
-
 
 /* -- FOOTER -- */
 
@@ -103,78 +82,59 @@ footer {
 /* -- NOTE -- */
 
 
-main .note {
+.note {
   padding: var(--size-2) var(--size-1);
   margin: 0;
   border-radius: var(--radius-2);
 }
 
-main .note .content {
+.note .meta {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  margin-bottom: var(--size-1);
+}
+
+.note .meta span {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-3);
+  color: var(--stone-6);
+}
+
+.note .meta span a {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-3);
+  color: var(--stone-6);
+  text-decoration: none;
+}
+
+.note .meta span a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.note .meta .control {
+  text-align: center;
+  margin: 0 var(--size-1);
+}
+
+.note .meta .control:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.note .meta .control:focus-visible {
+  outline: none;
+}
+
+.note .content {
   margin: 0;
   font-family: var(--font-sans);
   font-size: var(--font-size-2);
   font-weight: var(--font-weight-3);
   color: var(--stone-4);
   overflow-wrap: break-word;
-}
-
-main .note .meta {
-  display: grid;
-  grid-template-columns: 1fr auto auto;
-  margin-bottom: var(--size-1);
-}
-
-main .note .meta .info {
-  margin: 0;
-  font-family: var(--font-sans);
-  font-weight: var(--font-weight-3);
-  font-size: var(--font-size-1);
-  color: var(--stone-6);
-}
-
-main .note .edit {
-  text-align: center;
-  padding: 0;
-  margin: 0 var(--size-1);
-  
-  border: none;
-  
-  background: transparent;
-  color: var(--stone-6);
-
-  font-size: var(--font-size-1);
-  font-family: var(--font-sans);
-  font-weight: var(--font-weight-6);
-}
-
-main .note .edit:hover {
-  cursor: pointer;
-}
-
-main .note .edit:focus-visible {
-  outline: none;
-}
-
-main .note .delete {
-  text-align: right;
-  padding: 0 var(--size-1);
-  
-  border: none;
-  
-  background: transparent;
-  color: var(--stone-6);
-
-  font-size: var(--font-size-1);
-  font-family: var(--font-sans);
-  font-weight: var(--font-weight-6);
-}
-
-main .note .delete:hover {
-  cursor: pointer;
-}
-
-main .note .delete:focus-visible {
-  outline: none;
 }
 
 /* -- ADD -- */
