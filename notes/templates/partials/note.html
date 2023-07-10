@@ -1,16 +1,17 @@
 <div class="note">
-  <div class="meta">
-    <small class="info">
-      David Härer ∙ {{ note.timestamp | render_timestamp }}
-    </small>
-    <button class="edit" hx-get="/edit/{{ note.timestamp }}">✎</button>
-    <button
-      class="delete"
-      hx-delete="/delete/{{ note.timestamp }}"
-      hx-target="#notes"
+  <small class="meta">
+    <span>
+      <a href="{{ note.author.link }}">
+        {{ note.author.name }}
+      </a>
+      ∙ {{ note.timestamp | render_timestamp }}</span
     >
-      ⨯
-    </button>
-  </div>
+    {% if user.id == note.author_id %}
+    <span class="control" hx-get="/edit/{{ note.timestamp }}">Edit</span>
+    <span class="control" hx-delete="/delete/{{ note.id }}" hx-target="#notes">
+      Delete
+    </span>
+    {% endif %}
+  </small>
   <p class="content">{{ note.content }}</p>
 </div>

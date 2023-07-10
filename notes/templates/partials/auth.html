@@ -1,0 +1,14 @@
+{% if user %}
+<span>
+  <a href="{{ user.link }}" class="auth"> Profile </a>
+  &nbsp;|&nbsp;
+  <a href="/logout" class="auth">Logout</a>
+</span>
+{% else %}
+<a
+  href="https://github.com/login/oauth/authorize?client_id={{ client_id }}"
+  class="auth"
+>
+  Login with GitHub
+</a>
+{% endif %}

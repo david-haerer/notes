@@ -2,19 +2,13 @@
 <html lang="en">
   <head>
     {% include "partials/head.html" %}
-    <title>Notes…</title>
+    <title>Notes… | Welcome</title>
   </head>
   <body>
     <header>
       <h1>✍️ Notes…</h1>
       {% include "partials/auth.html" %}
     </header>
-    {% if user %}
-      {% include "partials/add.html" %}
-      {% else %}
-      <div style="height: var(--size-2);"> </div>
-    {% endif %}
-    {% include "partials/notes.html" %}
     <footer><p>Made with ❤️ by David Härer.</p></footer>
   </body>
 </html>
