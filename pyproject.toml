@@ -20,6 +20,7 @@ python-multipart = "^0.0.6"
 oauthlib = "^3.2.2"
 httpx = "^0.24.1"
 sqlmodel = "^0.0.8"
+alembic = "^1.11.1"
 
 [build-system]
 requires = ["poetry-core"]
